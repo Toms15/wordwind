@@ -15,15 +15,16 @@ mix.ImageWebp({
     to: 'images',
 })
 
-mix.js('resources/js/app.js', 'js')
-    .sass('resources/sass/app.scss', 'css')
-    .browserSync({
-       proxy: 'https://packword.test', /* Change with your local domain */
-       files: [
-              'css/**/*',
-              'js/**/*'
-       ],
-    });
+mix.js("resources/js/home.js", "js");
+mix.postCss("resources/css/app.css", "css", [require("tailwindcss")]);
+    
+// mix.browserSync({
+//    proxy: 'https://packword.test', /* Change with your local domain */
+//    files: [
+//           'css/**/*',
+//           'js/**/*'
+//    ],
+// });
 
 // Enable only for production
 // mix.minify('css/app.css');

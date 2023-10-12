@@ -19,7 +19,7 @@ get_header();
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-12">
+                <div class="col-lg-12 col-md-12 col-12 bg-indigo-900">
                     <img src="<?php echo get_template_directory_uri() . '/images/1080x540.webp'?>" alt="Example WebP image">
                     <h1 class="title"><?php printf( esc_html__( 'Title Here', 'wordpack' ) ); ?></h1>
                     <h2 class="subtitle"><?php printf( esc_html__( 'Subtitle Here', 'wordpack' ) ); ?></h2>

@@ -2,5 +2,4 @@
 /js
 mix-manifest.json
 /node_modules
-yarn.lock
-.npmrc
+package-lock.json
