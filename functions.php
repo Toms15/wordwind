@@ -296,6 +296,13 @@ function wordpack_random_string($length = 5) {
 }
 
 /**
+ * Get fallback image
+ */
+function get_fallback_image_url($width = 1920, $height = 1080) {
+    return "https://placehold.co/{$width}x{$height}/webp?text=Immagine+mancante";
+}
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
