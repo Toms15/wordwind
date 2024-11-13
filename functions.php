@@ -25,9 +25,9 @@ if ( ! function_exists( 'wordpack_setup' ) ) :
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on WordPack, use a find and replace
-		 * to change 'wordpack' to the name of your theme in all the template files.
+		 * to change 'wordwind' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'wordpack', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'wordwind', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -50,11 +50,11 @@ if ( ! function_exists( 'wordpack_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'mobile' => esc_html__( 'Mobile', 'wordpack' ),
-				'primary' => esc_html__( 'Primary', 'wordpack' ),
-				'sitemap' => esc_html__( 'Sitemap', 'wordpack' ),
-				'social' => esc_html__( 'Social', 'wordpack' ),
-				'useful-links' => esc_html__( 'Useful links', 'wordpack' )
+				'mobile' => esc_html__( 'Mobile', 'wordwind' ),
+				'primary' => esc_html__( 'Primary', 'wordwind' ),
+				'sitemap' => esc_html__( 'Sitemap', 'wordwind' ),
+				'social' => esc_html__( 'Social', 'wordwind' ),
+				'useful-links' => esc_html__( 'Useful links', 'wordwind' )
 			)
 		);
 
@@ -128,9 +128,9 @@ add_action( 'after_setup_theme', 'wordpack_content_width', 0 );
 function wordpack_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'wordpack' ),
+			'name'          => esc_html__( 'Sidebar', 'wordwind' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'wordpack' ),
+			'description'   => esc_html__( 'Add widgets here.', 'wordwind' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h4 class="widget-title">',
@@ -139,9 +139,9 @@ function wordpack_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'First Footer Widget Area', 'wordpack' ),
+			'name'          => esc_html__( 'First Footer Widget Area', 'wordwind' ),
 			'id'            => 'first-footer-widget-area',
-			'description'   => esc_html__( 'Add widgets here.', 'wordpack' ),
+			'description'   => esc_html__( 'Add widgets here.', 'wordwind' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h4 class="widget-title">',
@@ -150,9 +150,9 @@ function wordpack_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Second Footer Widget Area', 'wordpack' ),
+			'name'          => esc_html__( 'Second Footer Widget Area', 'wordwind' ),
 			'id'            => 'second-footer-widget-area',
-			'description'   => esc_html__( 'Add widgets here.', 'wordpack' ),
+			'description'   => esc_html__( 'Add widgets here.', 'wordwind' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h4 class="widget-title">',
@@ -161,9 +161,9 @@ function wordpack_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Third Footer Widget Area', 'wordpack' ),
+			'name'          => esc_html__( 'Third Footer Widget Area', 'wordwind' ),
 			'id'            => 'third-footer-widget-area',
-			'description'   => esc_html__( 'Add widgets here.', 'wordpack' ),
+			'description'   => esc_html__( 'Add widgets here.', 'wordwind' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h4 class="widget-title">',
@@ -172,9 +172,9 @@ function wordpack_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Fourth Footer Widget Area', 'wordpack' ),
+			'name'          => esc_html__( 'Fourth Footer Widget Area', 'wordwind' ),
 			'id'            => 'fourth-footer-widget-area',
-			'description'   => esc_html__( 'Add widgets here.', 'wordpack' ),
+			'description'   => esc_html__( 'Add widgets here.', 'wordwind' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h4 class="widget-title">',

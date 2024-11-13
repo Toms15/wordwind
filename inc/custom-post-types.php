@@ -7,15 +7,15 @@
 
 function jobs_position () {
     $labels = [
-        'name' => __('Posizioni aperte', 'Post Type General Name', 'wordpack'),
-        'singular_name' => __('Posizione aperta', 'Post Type Singular Name', 'wordpack'),
-        'menu_name' => __('Posizioni aperte', 'wordpack'),
-        'search_items' => __('Cerca posizioni aperte', 'wordpack'),
-        'edit_item' => __('Modifica posizione aperta', 'wordpack'),
+        'name' => __('Posizioni aperte', 'Post Type General Name', 'wordwind'),
+        'singular_name' => __('Posizione aperta', 'Post Type Singular Name', 'wordwind'),
+        'menu_name' => __('Posizioni aperte', 'wordwind'),
+        'search_items' => __('Cerca posizioni aperte', 'wordwind'),
+        'edit_item' => __('Modifica posizione aperta', 'wordwind'),
     ];
     $args = [
-        'label' => __('Posizioni aperte', 'wordpack'),
-        'description' => __('Posizioni aperte di Mister Smart Innovation', 'wordpack'),
+        'label' => __('Posizioni aperte', 'wordwind'),
+        'description' => __('Posizioni aperte di Mister Smart Innovation', 'wordwind'),
         'labels' => $labels,
         'supports' => ['title', 'editor'],
         'hierarchical' => false,

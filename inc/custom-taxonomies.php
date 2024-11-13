@@ -7,9 +7,9 @@
 
 function offices_taxonomy () {
     $labels = array(
-        'name' => _x('Sedi', 'Taxonomy General Name', 'wordpack'),
-        'singular_name' => _x('Sede', 'Taxonomy Singular Name', 'wordpack'),
-        'add_new_item' => __('Aggiungi nuova sede', 'wordpack')
+        'name' => _x('Sedi', 'Taxonomy General Name', 'wordwind'),
+        'singular_name' => _x('Sede', 'Taxonomy Singular Name', 'wordwind'),
+        'add_new_item' => __('Aggiungi nuova sede', 'wordwind')
     );
     $args = [
         'labels' => $labels,

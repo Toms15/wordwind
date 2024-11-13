@@ -18,7 +18,7 @@
 					<div class="site-info">
 						<?php
 						/* translators: 1: Theme name, 2: Theme author. */
-						printf( esc_html__( 'An happy artwork by %2$s.', 'wordpack' ), 'wordpack', '<a href="https://widerview.it/" target="_blank" rel="nofollow">Wider View</a>' );
+						printf( esc_html__( 'An happy artwork by %2$s.', 'wordwind' ), 'wordwind', '<a href="https://widerview.it/" target="_blank" rel="nofollow">Wider View</a>' );
 						?>
 					</div><!-- .site-info -->					
 				</div>

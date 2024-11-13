@@ -33,7 +33,7 @@ class Widget_Shortcode {
      * @since 0.2.4
      */
     function i18n() {
-        load_plugin_textdomain( 'wordpack', false, '/languages' );
+        load_plugin_textdomain( 'wordwind', false, '/languages' );
     }
 
     /**
@@ -62,8 +62,8 @@ class Widget_Shortcode {
      */
     function arbitrary_sidebar() {
         register_sidebar( array(
-            'name' => __( 'Wordpack Shortcode', 'wordpack' ),
-            'description'   => __( 'This widget area is not displayed on frontend and can be used for [widget] shortcode.', 'wordpack' ),
+            'name' => __( 'Wordpack Shortcode', 'wordwind' ),
+            'description'   => __( 'This widget area is not displayed on frontend and can be used for [widget] shortcode.', 'wordwind' ),
             'id' => 'arbitrary',
             'before_widget' => '',
             'after_widget'  => '',
@@ -78,7 +78,7 @@ class Widget_Shortcode {
      */
     function in_widget_form( $widget, $return, $instance ) {
         echo '<p>' .
-                __( 'Shortcode', 'wordpack' ) . ': ' . ( ( $widget->number == '__i__' ) ? __( 'Please save this first.', 'wordpack' ) : '<input type="text" value="' . esc_attr( '[widget id="'. $widget->id .'"]' ) . '" readonly="readonly" class="widefat" onclick="this.select()" />' ) .
+                __( 'Shortcode', 'wordwind' ) . ': ' . ( ( $widget->number == '__i__' ) ? __( 'Please save this first.', 'wordwind' ) : '<input type="text" value="' . esc_attr( '[widget id="'. $widget->id .'"]' ) . '" readonly="readonly" class="widefat" onclick="this.select()" />' ) .
             '</p>';
     }
 
